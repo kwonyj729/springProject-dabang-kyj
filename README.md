@@ -9,7 +9,7 @@ select * from room_option;
 select * from floor;
 select * from post_deal;
 select * from post_auth;
-select * from like_room;
+select * from like_room;-
 select * from room_pic;
 
 drop table like_room;

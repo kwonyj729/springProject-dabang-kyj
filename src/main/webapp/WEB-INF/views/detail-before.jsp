@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ include file="include/nav.jsp"%>
+<%@ include file="../include/nav.jsp"%>
 
 <div class="container">
 	<br /> <br />
@@ -20,7 +20,7 @@
 				<td><span>${room.areaM}㎡</span>
 					<button type="button">평</button></td>
 				<td>
-					<div class="text-primary">(${room.mcost})만 원 + α</div>
+					<div class="text-primary">(${room.mcost}만 원 + α</div>
 				</td>
 				<td class="text-right"><span>(주)래미안복덕방부동산중개법인(수정)</span><br /> <span>김정식(수정)</span></td>
 				<td><span><button type="button" class="btn btn-outline-primary ml-auto">연락처보기</button></span></td>
@@ -147,7 +147,7 @@
 						<tr>
 							<td>-</td>
 							<td>${room.yearRent}만원</td>
-							<td>${room.mcost }만원<br />(기타)
+							<td>${room.mcost }만원 <br />(기타)
 							</td>
 							<td>${room.parking }<br />(무료)
 							</td>
@@ -191,7 +191,10 @@
 					<tbody>
 						<tr class="item text-center">
 							<c:forEach var="room_option" items="${room_options}" varStatus="status">
-								<td><img src="/images/kwon/options/${room_option.optionName}" onerror="javascript:this.src ='/images/kwon/unknown.jpg'" /></td>
+								<td>
+								<img src="/images/kwon/options/${room_option.optionName}" 
+								onerror="javascript:this.src ='/images/kwon/unknown.jpg'" />
+								</td>
 								<c:if test="${((status.index+1) mod 6) == 0}">
 						</tr>
 						<tr class="item text-center">
@@ -201,7 +204,7 @@
 
 
 					</tbody>
-
+					
 				</table>
 
 				<br />
@@ -263,22 +266,11 @@
 				<h5>서울특별시 강서구 화곡동</h5>
 				<br />
 				<div class="card" id="map_card" style="width: 400px m-auto">
-					<!--  <img class="card-img-top" src="/images/kwon/map1.png" alt=""> -->
-
-					<!-- 실제 지도를 그리는 javascript API 불러오기. -->
-
-					<!-- <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
-					<!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script> -->
-
-
-					<!-- 지도 담을 영역 만들기 -->
-					<div id="map" style="width: 800px; height: 400px;"></div>
-
-
-
-
-
-
+				
+				
+					<img class="card-img-top" src="/images/kwon/map1.png" alt="">
+				
+				
 					<div class="card-body" id="map_card_body">
 
 						<table class="table table-borderless">
@@ -392,22 +384,9 @@
 	}
 </script>
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ad4b165fec855f2776f599a8e5f6011&libraries=services,clusterer,drawing"></script>
-<!-- 지도를 띄우는 코드 작성하기 -->
-<script>
-	var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-	var options = { //지도를 생성할 때 필요한 기본 옵션
-		center : new kakao.maps.LatLng(33.450701,
-				126.570667), //지도의 중심좌표.
-		level : 3
-	//지도의 레벨(확대, 축소 정도)
-	};
-
-	var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-</script>
 
 
 
 <br />
 <br />
-<%@ include file="include/footer.jsp"%>
+<%@ include file="../include/footer.jsp"%>

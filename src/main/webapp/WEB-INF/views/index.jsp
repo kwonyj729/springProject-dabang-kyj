@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ include file="../include/nav.jsp"%>
+<%@ include file="include/nav.jsp"%>
 
 <section class="hero-wrap js-fullheight"
 	style="background-image: url('images/main.jpg');" data-section="home"
@@ -253,5 +253,5 @@
 </section>
 
 
-<%@ include file="../include/footer.jsp"%>
+<%@ include file="include/footer.jsp"%>
 

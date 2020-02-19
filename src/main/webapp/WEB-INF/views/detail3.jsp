@@ -2,14 +2,12 @@
 
 <%@ include file="../include/nav.jsp"%>
 
-
-
 <div class="container">
    <br /> <br />
    <table class="table table-borderless">
       <thead>
          <tr class="text-smaller text-secondary">
-            <th>전세(주방 분리형(1.5룸))</th>
+            <th>원룸(주방 분리형(1.5룸))</th>
             <th>전용면적</th>
             <th>한달생활비</th>
             <th></th>
@@ -18,14 +16,13 @@
       </thead>
       <tbody>
          <tr>
-            <td><span>전세 1억 3000만원</span></td>
-            <td><span>20㎡</span>
-               <button type="button">평</button>
-            </td>
+            <td><span>전세 1억 만원3000</span></td>
+            <td><span>39.66㎡</span>
+               <button type="button">평</button></td>
             <td>
                <div class="text-primary">3만 원 + α</div>
             </td>
-            <td class="text-right"><span>(주)래미안복덕방부동산중개법인(수정)</span><br /> <span>김정식(수정)</span></td>
+            <td class="text-right"><span>(주)래미안복덕방부동산중개법인</span><br /> <span>김정식</span></td>
             <td><span><button type="button" class="btn btn-outline-primary ml-auto">연락처보기</button></span></td>
          </tr>
       </tbody>
@@ -48,23 +45,24 @@
             <td style="background-color: #3665CE; color: white;"></td>
          </tr>
          <tr style="font-size: small;">
-            <td>• 해당층</td>
-            <td>4층</td>
-            <td>• 공급면적</td>
-            <td><span>20㎡</span><span>
-                  <button type="button" class="btn btn-outline-secondary btn-sm">평</button></span>
-            </td>
-            <td>• 엘리베이터</td>
-            <td>있음</td>
-             <td>• 전세자금대출</td>
-            <td>${room.lof}</td>
-            
+            <td>• 해당층/건물층</td>
+            <td>6층/10층</td>
+            <td>• 전용/공급면적</td>
+            <td><span>39.66/56.19㎡</span><span>
+                  <button type="button" class="btn btn-outline-secondary btn-sm">평</button>
+            </span></td>
+            <td>• 난방종류</td>
+            <td>개별난방</td>
+            <td>• 빌트인</td>
+            <td>빌트인 주방</td>
          </tr>
          <tr style="font-size: small;">
-         	<td>• 입주가능일</td>
-            <td>${room.moveDay}</td>
-            
-            
+            <td>• 엘리베이터</td>
+            <td>있음</td>
+            <td>• 반려동물</td>
+            <td>가능</td>
+            <td>• 베란다/발코니</td>
+            <td>있음</td>
             <td>• 전세자금대출</td>
             <td>가능</td>
          </tr>
@@ -165,16 +163,16 @@
                      <th>전세</th>
                      <th>관리비</th>
                      <th>주차비</th>
-                     
+                     <th>단기임대</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>-</td>
-                     <td>${room.monthRent}만 원</td>
-                     <td>${room.mcost }만 원 <br />(기타)
+                     <td>1억 4000만 원</td>
+                     <td>3만 원 <br />(기타)
                      </td>
-                     <td>${room.parking }<br />(무료)
+                     <td>가능<br />(무료)
                      </td>
                      <td>불가능</td>
                   </tr>
@@ -188,7 +186,7 @@
                   </div>
                   <div class="col-sm-9">
                      <div class="card-body">
-                        <h5>${room.mcost}만 원 + a (관리비+주차비))</h5>
+                        <h5>3만 원 + a (관리비+주차비))</h5>
                      </div>
                   </div>
                </div>
